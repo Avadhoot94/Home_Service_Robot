@@ -86,7 +86,7 @@ $ sudo apt-get install ros-kinetic-map-server
 $ sudo apt-get install ros-kinetic-amcl
 $ sudo apt-get install ros-kinetic-move-base
 $ sudo apt-get install ros-kinetic-slam-gmapping
-sudo apt-get install xterm
+$ sudo apt-get install xterm
 ```
 
 Clone these ROS packages in the workspace
@@ -110,7 +110,7 @@ $ source devel/setup.bash
 
 #### 5. Launch the scripts (Turn the scripts into executable script)
 ```
-$ cd cd /home/robond/workspace/catkin_ws/src/Home_Service_Robot/scripts
+$ cd /home/robond/workspace/catkin_ws/src/Home_Service_Robot/scripts
 $ chmod +x add_markers.sh
 $ chmod +x home_service.sh
 $ chmod +x pick_objects.sh
