@@ -1,0 +1,8 @@
+<!--
+  Used for visualising the turtlebot while building a map or navigating with the ros navistack.
+ -->
+<launch>
+<arg name="rviz_file"  default="-d $(find turtlebot_rviz_launchers)/rviz/navigation.rviz"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="$(arg rviz_file)">
+  </node>
+</launch>
