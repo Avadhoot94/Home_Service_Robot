@@ -57,10 +57,31 @@
 ```  
 
 ## Project Goals
+Creating a custom Gazebo world.
 
+Deploying ```turtlebot``` in the world.
+
+Using ```gmapping``` - ROS Package to map the world.
+
+Writing a ```pick_objects``` node to send pickup and dropoff location to the ROS navigation stack.
+
+Using ROS AMCL package, the robot is continously localised with respect to the environment. 
+The ROS navigation stack creates a path for the robot based on Dijkstra's algorithm, a variant of the Uniform Cost Search algorithm, while avoiding obstacles on its path.
+
+Writing a ```add_markers``` node which adds marker (virtual object) in ```RViz``` to simulate picking and dropping off of object by the robot.
+
+Writing shell script to launch the project.
 
 ## Output
+1. Show marker at the pickup zone. 
+2. Hide the marker once the robot reaches the pickup zone
+3. Wait 5 seconds to simulate a pickup
+4. Show the marker at the drop off zone once your robot reaches it
 
+The robot is unaware of the human figures as can be seen in the map provided to the robot.
+ROS Navigation stack actively avoids obstacle in its path.
+
+![](output/output_gif.gif)
 
 ## Environment
 Tested on Ubuntu 16.04.6 LTS, ROS Kinetic, Boost 1.58
@@ -105,14 +126,33 @@ $ catkin_make
 $ source devel/setup.bash
 ````
 
-#### 4. Load RViz
+#### 4. Replace ```view_navigation.launch``` with custom launch file 
+The ```view_navigation.launch``` file of ```turtlebot_rviz_launchers``` package brings up ```RViz```.
 
+However, to launch ```RViz``` with custom configuration file, minor tweaking was done to allow passing of RViz config file location as parameter.
 
-#### 5. Launch the scripts (Turn the scripts into executable script)
+The original file path is still a default in the launch file.
+
+```
+$ cd /home/robond/workspace/catkin_ws/src/Home_Service_Robot
+$ mv view_navigation.launch /home/robond/workspace/catkin_ws/src/Home_Service_Robot/turtlebot_interactions/turtlebot_rviz_launchers/launch
+```
+
+#### 5. Launch the script
+Turn the script into executable script
 ```
 $ cd /home/robond/workspace/catkin_ws/src/Home_Service_Robot/scripts
-$ chmod +x add_markers.sh
 $ chmod +x home_service.sh
+```
+
+Execute the script
+```
+$ ./home_service.sh
+```
+
+The following are the scripts to test the workings of individual features:
+```
+$ chmod +x add_markers.sh
 $ chmod +x pick_objects.sh
 $ chmod +x test_navigation.sh
 $ chmod +x test_slam.sh
@@ -120,5 +160,4 @@ $ ./test_slam.sh
 $ ./test_navigation.sh
 $ ./add_markers.sh
 $ ./pick_objects.sh
-$ ./home_service.sh
 ```
