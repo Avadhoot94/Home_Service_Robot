@@ -82,6 +82,7 @@ The robot is unaware of the human figures as can be seen in the map provided to 
 ROS Navigation stack actively avoids obstacle in its path.
 
 ![](output/output_gif.gif)
+Speed: x6 of the original output
 
 ## Environment
 Tested on Ubuntu 16.04.6 LTS, ROS Kinetic, Boost 1.58
