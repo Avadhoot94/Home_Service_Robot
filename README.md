@@ -81,8 +81,14 @@ Writing shell script to launch the project.
 Unknown obstacles (human figures) are added in the world.
 ROS Navigation stack dynamically avoids obstacle in its path.
 
-![](output/output_gif.gif)
+<img src="output/output_gif.gif" width="1200" height ="400"/>
 Speed: x6 of the original output
+
+
+
+### Robot used - Turtlebot
+
+<img src="output/turtlebot.png" height="300">
 
 ## Environment
 Tested on Ubuntu 16.04.6 LTS, ROS Kinetic, Boost 1.58
