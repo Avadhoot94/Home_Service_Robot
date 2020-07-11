@@ -78,8 +78,8 @@ Writing shell script to launch the project.
 3. Wait 5 seconds to simulate a pickup
 4. Show the marker at the drop off zone once your robot reaches it
 
-The robot is unaware of the human figures as can be seen in the map provided to the robot.
-ROS Navigation stack actively avoids obstacle in its path.
+Unknown obstacles (human figures) are added in the world.
+ROS Navigation stack dynamically avoids obstacle in its path.
 
 ![](output/output_gif.gif)
 Speed: x6 of the original output
