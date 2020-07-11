@@ -52,6 +52,9 @@
     │   ├── pick_objects.sh
     │   ├── test_navigation.sh
     │   └── test_slam.sh
+    ├── output
+    │   ├── output_gif.gif
+    │   ├── turtlebot.png
     ├── LICENSE
     ├── README.md
 ```  
@@ -86,7 +89,7 @@ Speed: x6 of the original output
 
 
 
-### Robot used - Turtlebot
+### Robot used - ```Turtlebot```
 
 <img src="output/turtlebot.png" height="300">
 
