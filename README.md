@@ -77,8 +77,6 @@ Writing shell script to launch the project.
 
 ## Output
 
-``` The output is unavailable because the LFS limit has been exceeded. I'm working on figuring it out```
-
 1. Show marker at the pickup zone. 
 2. Hide the marker once the robot reaches the pickup zone
 3. Wait 5 seconds to simulate a pickup
