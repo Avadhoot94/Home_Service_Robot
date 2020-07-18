@@ -84,6 +84,8 @@ Writing shell script to launch the project.
 Unknown obstacles (human figures) are added in the world.
 ROS Navigation stack dynamically avoids obstacle in its path.
 
+``` The output is unavailable because the LFS limit has been exceeded. I'm working on figuring it out```
+
 <img src="output/output_gif.gif" width="1200" height ="400"/>
 Speed: x6 of the original output
 
