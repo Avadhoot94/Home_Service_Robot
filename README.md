@@ -88,7 +88,7 @@ Unknown obstacles (human figures) are added in the world.
 ROS Navigation stack dynamically avoids obstacle in its path.
 
 
-<img src="output/output_gif.gif" width="1200" height ="400"/>
+<img src="output/output_gif.GIF" width="1200" height ="400"/>
 Speed: x6 of the original output
 
 
